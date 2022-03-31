@@ -611,7 +611,7 @@ def main():
     try:
         if args.local:
             sites = SitesInformation(os.path.join(
-                os.path.dirname(__file__), "resources/data.json"))
+                os.path.dirname(__file__), "resources/minilist-data.json"))
         else:
             sites = SitesInformation(args.json_file)
     except Exception as error:
